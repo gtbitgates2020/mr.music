@@ -1,0 +1,480 @@
+@import url("header.css");
+@import url("footer.css");
+
+#darklogo{
+    display: var(--darklogo);
+
+}
+#lightlogo{
+    display: var(--lightlogo);
+}
+.dots{
+    animation: 0.5s dotanim alternate infinite linear;
+    -webkit-animation: 0.5s dotanim alternate infinite linear;
+    -moz-animation: 0.5s dotanim alternate infinite linear;
+    -o-animation: 0.5s dotanim alternate infinite linear;
+    
+}
+.level1{
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+}
+.level2{
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+}
+.level3{
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+}
+.level4{
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+}
+.level5{
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+@keyframes dotanim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes dotanim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes dotanim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.heart{
+    position: relative;
+    overflow-y: hidden;
+}
+.heart1, .heart2,.heart3,.heart4,.heart5,.heart6{
+    position: absolute;
+    opacity: 0;
+    color: var(--bgclr);
+    z-index: 100;
+    bottom: 0;
+    text-shadow: 6px 6px 8px var(--shadow1),
+                -6px -3px 8px var(--shadow2) ;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+
+}
+
+.heart1,.heart3,.heart5{
+    font-size: 120px;
+}
+.heart2,.heart4,.heart6{
+    font-size: 60px;
+}
+.heart1{
+    left: 7%;
+    animation: wow 8s linear infinite;
+    -webkit-animation: wow 8s linear infinite;
+    -moz-animation: wow 8s linear infinite;
+    -o-animation: wow 8s linear infinite;
+}
+.heart2{
+    left: 50%;
+    animation: wow 8s linear infinite;
+    -webkit-animation: wow 8s linear infinite;
+    -moz-animation: wow 8s linear infinite;
+    -o-animation: wow 8s linear infinite;
+}
+.heart3{
+    left: 15%;
+    animation: wow 8s linear infinite;
+    -webkit-animation: wow 8s linear infinite;
+    -moz-animation: wow 8s linear infinite;
+    -o-animation: wow 8s linear infinite;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+}
+.heart4{
+    left: 40%;
+    animation: wow 8s linear infinite;
+    -webkit-animation: wow 8s linear infinite;
+    -moz-animation: wow 8s linear infinite;
+    -o-animation: wow 8s linear infinite;
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+}
+.heart5{
+    left: 66%;
+    animation: wow 8s linear infinite;
+    -webkit-animation: wow 8s linear infinite;
+    -moz-animation: wow 8s linear infinite;
+    -o-animation: wow 8s linear infinite;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+}
+.heart6{
+    left: 77%;
+    animation: wow 8s linear infinite;
+    -webkit-animation: wow 8s linear infinite;
+    -moz-animation: wow 8s linear infinite;
+    -o-animation: wow 8s linear infinite;
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+}
+@keyframes wow{
+    0%{
+        bottom: 0%;
+    }
+    1%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        bottom: 67%;
+        
+    }
+}
+@-webkit-keyframes wow{
+    0%{
+        bottom: 0%;
+    }
+    6%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        bottom: 67%;
+        
+    }
+}
+
+@-moz-keyframes wow{
+    0%{
+        bottom: 0%;
+    }
+    6%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        bottom: 67%;
+        
+    }
+}
+
+@-o-keyframes wow{
+    0%{
+        bottom: 0%;
+    }
+    6%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        bottom: 67%;
+        
+    }
+}
+.announcement{
+    background-color: var(--bgclr);
+    color:var(--txtclr);
+    font-family: 'Kaushan Script', cursive;
+}
+h1{
+    font-weight: bolder;
+}
+.what{
+    
+    border: none;
+    background-color: var(--bgclr)!important;
+    box-shadow: 8px 8px 20px var(--shadow1),
+                -8px -8px 20px var(--shadow2);
+    height: 360px;
+    border-radius: 20px;
+    transition: 0.5s all linear;
+}
+
+.what.what1{
+    box-shadow:inset 8px 8px 10px var(--shadow1),
+               inset -12px -12px 10px var(--shadow2);
+}
+.what:hover{
+    cursor: pointer;
+}
+.what .icons{
+    width: 150px;
+    height: 150px;
+    background-color: var(--bgclr);
+    box-shadow:inset 8px 8px 10px var(--shadow1),
+               inset -12px -12px 10px var(--shadow2);
+    margin: auto;
+    border-radius: 50%;
+}
+.what .icons1{
+    box-shadow: 8px 8px 20px var(--shadow1),
+    -12px -12px 20px var(--shadow2);
+}
+.what .icons1:hover{
+    box-shadow:inset 8px 8px 10px var(--shadow1),
+               inset -12px -12px 10px var(--shadow2);
+}
+.what .icons:hover{
+    box-shadow: 8px 8px 20px var(--shadow1),
+                -12px -12px 20px var(--shadow2);
+}
+.what i{
+    font-size:5rem;
+    color: var(--bgclr);
+    text-shadow: 6px 6px 8px var(--shadow1),
+                 -6px -6px 8px var(--shadow2) !important;
+}
+.icon{
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#music2{
+    animation-delay: 0.5s!important;
+}
+#music1,#music2{
+    color:var(--bgclr)!important; 
+    font-size: 200px;
+    text-shadow: 6px 6px 8px var(--shadow1),
+                    -6px -6px 8px var(--shadow2);
+    animation: pop 0.5s linear alternate infinite;
+    -webkit-animation: pop 0.5s linear alternate infinite;
+    -moz-animation: pop 0.5s linear alternate infinite;
+    -o-animation: pop 0.5s linear alternate infinite;
+}
+
+
+@keyframes pop{
+    from{
+        transform:translateY(-30px);
+        
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+@-webkit-keyframes pop{
+    from{
+        transform:translateY(-30px);
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+@-moz-keyframes pop{
+    from{
+        transform:translateY(-30px);
+        
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+@-o-keyframes pop{
+    from{
+        transform:translateY(-30px);
+        
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+
+.latest{
+    color: var(--bgclr);
+    font-size: 130px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 6px 6px 12px var(--shadow1),
+                -6px -6px 12px var(--shadow2);
+}
+.songs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgclr);
+    border-radius: 20px;
+    box-shadow: 12px 12px 20px var(--shadow1),
+                -12px -12px 20px var(--shadow2);
+    transition: 0.5s box-shadow linear;
+    -webkit-transition: 0.5s box-shadow linear;
+    -moz-transition: 0.5s box-shadow linear;
+    -o-transition: 0.5s box-shadow linear;
+}
+.songs h1, .songs h2{
+    font-weight: bolder;
+    font-family: 'Special Elite', cursive;
+}
+.songs h1{
+    font-size: 25px;
+}
+.songs h2{
+    font-size: 20px;
+}
+.songs img{
+    border-radius: 10px;
+    width: 150px!important;
+    height: 150px!important;
+}
+
+.songs:hover{
+    box-shadow:inset 12px 12px 15px var(--shadow1),
+               inset -12px -12px 15px var(--shadow2);
+}
+
+
+
+
+
+
+
+/* Media Quereis */
+
+
+@media (max-width:991px){
+    .logos{
+        width: 450px!important;
+        height: 450px!important;
+    }
+    .what{
+        height: 380px!important;
+    }
+    .what .icons1{
+        box-shadow:inset 8px 8px 10px var(--shadow1),
+        inset -12px -12px 10px var(--shadow2)!important;
+    }
+    .what .icons1:hover{
+        box-shadow: 8px 8px 10px var(--shadow1),
+                    -12px -12px 10px var(--shadow2)!important;
+    }
+    .what.what1{
+        box-shadow: 8px 8px 10px var(--shadow1),
+                    -12px -12px 10px var(--shadow2)!important;
+    }
+    .latest{
+        font-size: 130px;
+    }
+}
+
+/* --------------------------------- */
+
+
+
+@media(max-width:1100px){
+    #music1,#music2{
+        font-size: 150px;
+    }
+    
+}
+
+
+/* ------------------------------- */
+
+@media(max-width:1501px){
+    .heart1,.heart3,.heart5{
+        font-size: 90px;
+    }
+    .heart2,.heart4,.heart6{
+        font-size: 55px;
+    }
+}
+
+@media(max-width:1200px){
+    .heart1,.heart3,.heart5{
+        font-size: 70px;
+    }
+    .heart2,.heart4,.heart6{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:920px){
+    .heart1,.heart3,.heart5{
+        font-size: 55px;
+    }
+    .heart2,.heart4,.heart6{
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width:767px){
+    
+    #music1,#music2{
+        display: none;
+    }
+    .latest{
+        font-size: 70px;
+    }
+}
+
+
+
+@media(max-width:450px){
+    .latest{
+        font-size: 70px;
+    }
+    .logos{
+        width: 400px!important;
+        height: 400px!important;
+    }
+}
+
+@media(max-width:380px){
+    .logos{
+        width: 350px!important;
+        height: 350px!important;
+    }
+}
+

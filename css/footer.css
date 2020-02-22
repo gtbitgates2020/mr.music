@@ -1,0 +1,40 @@
+
+    #footer{
+        background-color: var(--bgclr);
+        color: var(--txtclr);
+        box-shadow: -6px -6px 10px var(--shadow2);
+    }
+    
+    #footer i{
+        font-size: 40px;
+    }
+    #footer p{
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .circle a{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index:1;
+    }
+    #about{
+        color: #00FF33;
+    }
+    #contact{
+        color: #FF0000;
+    }
+    #help{
+        color: #9D00FF;
+    }
+    #feedback{
+        color: #FF00CC;
+    }
+    #fb{
+        color:#0062FF ;
+    }
+    #insta{
+        color:  #e1306c;
+    }

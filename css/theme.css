@@ -1,0 +1,9 @@
+:root{
+    --bgclr:#eaeaea;
+    --shadow1:rgba(0,0,0,0.08);
+    --shadow2:rgba(255,255,255,1);
+    --txtclr:black;
+    --imgsrc:"mrmusic.png";
+    --darklogo:"none";
+    --lightlogo:"block";
+}

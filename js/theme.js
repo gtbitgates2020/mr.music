@@ -1,0 +1,11 @@
+
+function change(theme){if (theme == "dark"){document.documentElement.style.setProperty('--darklogo','block');document.documentElement.style.setProperty('--lightlogo','none'); document.documentElement.style.setProperty('--bgclr', '#313131');document.documentElement.style.setProperty('--shadow1', 'rgba(238, 236, 236, 0.08)');document.documentElement.style.setProperty('--shadow2', 'rgb(8, 8, 8)');document.documentElement.style.setProperty('--txtclr', 'rgb(255,255,255,1)');document.getElementById("logo").src="http://localhost/mrmusic/images/mrmusic1.png";}else{ document.documentElement.style.setProperty('--darklogo','none');document.documentElement.style.setProperty('--lightlogo','block');     document.documentElement.style.setProperty('--bgclr', '#eaeaea');document.documentElement.style.setProperty('--shadow1', 'rgba(0,0,0,0.08)');document.documentElement.style.setProperty('--shadow2', 'rgba(255,255,255,1)');document.documentElement.style.setProperty('--txtclr', 'rgb(0,0,0,1)');document.getElementById("logo").src="http://localhost/mrmusic/images/mrmusic.png";}}function checkCookie(){var theme = getCookie("theme");if(theme != ""){if(theme == "dark"){document.getElementById("togle").checked=true;}change(theme);}else{change("light");}}function setCookies(){ var elem = document.getElementById("togle").checked;var d = new Date();d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));var expires = "expires="+d.toUTCString();if(elem){document.cookie = "theme = dark"  + ";" + expires + ";path=/";change("dark");}else{document.cookie = "theme = light"  + ";" + expires + ";path=/";change("light");}}function getCookie(cname){var name = cname + "=";var decodedCookie = decodeURIComponent(document.cookie);var ca = decodedCookie.split(';');for(var i = 0; i < ca.length; i++) {var c = ca[i];while (c.charAt(0) == ' ') {c = c.substring(1);}if (c.indexOf(name) == 0) {return c.substring(name.length, c.length);}}return "";}
+
+window.onscroll=function showUp(){
+    if(document.body.scrollTop>350 || document.documentElement.scrollTop>350){
+        document.getElementById('toTop').classList.add('toTop');
+    }
+    else{
+        document.getElementById('toTop').classList.remove("toTop");
+    }
+}
